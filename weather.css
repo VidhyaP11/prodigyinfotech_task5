@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    background:#222;
+}
+.card{
+   width:80%;
+   max-width: 450px;
+   background:linear-gradient(135deg,#00feba,#5b548a);
+   color:#fff;
+   margin:100px auto 0;
+   /*make the card corner curve*/
+   border-radius:20px;
+   padding: 40px 35px;
+   text-align:center;
+   margin-top:25px;
+}
+.ser{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ser input{
+    /*for removing the border*/
+    border: 0;
+    /*for removing border while writing*/
+    outline: 0;
+    background: #ebfffc;
+    color:555;
+    /*for the text inside the box*/
+    padding: 10px 25px;
+    height: 60px;
+    /*for the corner curve*/
+    border-radius: 30px;
+    /*perform like width for textbox*/
+    flex: 1;
+    /*for the gap between search and textbox*/
+    margin-right: 16px;
+    font-size: 18px;
+}
+.ser button{
+    /*for removing the border*/
+    border: 0;
+    /*for removing border while writing*/
+    outline: 0;
+    background: #ebfffc;
+    height: 60px;
+    /*for the corner curve*/
+    border-radius: 50%;
+    width: 60px;
+    /*the little hand will come*/
+    cursor: pointer;
+}
+.ser button img{
+    width: 16px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top:25px;
+}
+.weather h1{
+    font-size:80px;
+    font-weight:500;
+    margin-top: -7px;
+}
+.weather h2{
+    font-size:45px;
+    font-weight: 400;
+    margin-top: -40px;
+}
+.details{
+    /* because the item will come in row */
+    display:flex;
+    align-items: center;
+    /*they are in row but there is no space so we are applying below*/
+    justify-content: space-between;
+    /*for correct fit*/
+    padding: 0 20px;
+    margin-top:60px;
+}
+.cols{
+    display: flex;
+    align-items: center;
+    /* the word humidy and 50% is in left align*/
+    text-align: left;
+}
+.cols img{
+    width:50px;
+    margin-right:10px;
+}
+.humidity,.Wind{
+    font-size: 20px;
+    margin-top: 15px;   
+}
+.pp{
+    margin-top:-15px; 
+}
+.weather{
+    display: none;
+}
+.error1{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display:none;
+}
+
+
